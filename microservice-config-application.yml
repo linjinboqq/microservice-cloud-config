@@ -1,17 +1,17 @@
 spring:
   profiles:
-    active: dev # 激活开发环境配置
+    active: dev 
 ---
-server:
-  port: 4001 #端口号
-spring:
-  profiles: dev # 开发环境
-    application:
+server: 
+  port: 4001 
+  spring: 
+  profiles: dev 
+    application:  
       name: microservice-config-dev
 ---
-server:
-  port: 4002 #端口号
-  spring:
-    profiles: prod # 生产环境
+server: 
+  port: 4002 
+  spring: 
+    profiles: prod 
     application:
       name: microservice-config-prod
